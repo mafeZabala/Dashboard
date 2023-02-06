@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:ital,wght@1,200&family=Noto+Sans:ital,wght@0,100;0,200;1,100&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,600&family=Poppins:wght@200&family=Ubuntu:ital,wght@0,700;1,500;1,700&family=Unbounded:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="dashborad.css">
+    <title>Dashborad</title>
+</head>
+
+<body>
+    <section class="contenedor-principal">
+        <nav class="principal-nav">
+            <div class="nav-iconos-arriba">
+                <div class="linea-arriba">
+                    <span class="material-symbols-outlined campanita"> notifications_active </span>
+                </div>
+                <input class="input-iconos" type="radio" name="icono" id="icono1" checked>
+                <label for="icono1" class="material-symbols-outlined iconos-arriba-material"> home </label>
+                <input class="input-iconos" type="radio" name="icono" id="icono2">
+                <label for="icono2" class="material-symbols-outlined iconos-arriba-material"> description </label>
+                <input class="input-iconos" type="radio" name="icono" id="icono3">
+                <label for="icono3" class="material-symbols-outlined iconos-arriba-material"> analytics </label>
+                <input class="input-iconos" type="radio" name="icono" id="icono4">
+                <label for="icono4" class="material-symbols-outlined iconos-arriba-material"> chart_data </label>
+                <input class="input-iconos" type="radio" name="icono" id="icono5">
+                <label for="icono5" class="material-symbols-outlined iconos-arriba-material"> play_circle </label>
+
+            </div>
+            <div class="nav-iconos-abajo">
+                <span class="material-symbols-outlined linea-abajo"> logout </span>
+            </div>
+        </nav>
+        <section class="principal-informacion">
+            <section class="informacion-titulo">
+                <div class="titulo-dashboard">
+                    <p class="dashboard-texto-chiquito">Primary</p>
+                    <h3>Dashboard</h3> 
+                </div>
+                <div class="informacion-search">
+                    <input class="informacion-buscar" placeholder="Buscar">
+                    <span class="material-symbols-outlined search"> search </span>
+                    <img src="./img/img1.jpg" alt="" class="imagen">
+                </div>
+            </section>
+            <section class="informacion-estadisticas">
+                <div class="estadisticas-principal colocar-border-radius">
+                    <div class="estadisticas-principal-overview">
+                        <h3>Overview</h3>
+                        <button class="principal-overview-boton"><p>Activity</p><span class="material-symbols-outlined">keyboard_arrow_down</span></button>
+                    </div>
+                    <div></div>
+                    <div class="estadisticas-principal-numeros">
+                        <div class="principal-numeros-informacion colocar-border-radius izquierda">
+                            <p class="dashboard-texto-chiquito">Last Over</p>
+                            <h3>748 Hr</h3>
+                            <p class="dashboard-texto-chiquito">April</p>
+                        </div>
+                        <div class="principal-numeros-informacion colocar-border-radius centro">
+                            <p class="dashboard-texto-chiquito">Last Over</p>
+                            <h3>748 Hr</h3>
+                            <p class="dashboard-texto-chiquito">April</p>
+                        </div>
+                        <div class="principal-numeros-informacion colocar-border-radius derecha">
+                            <p class="dashboard-texto-chiquito">Last Over</p>
+                            <h3>748 Hr</h3>
+                            <p class="dashboard-texto-chiquito">April</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="estadisticas-zapato colocar-border-radius">
+                    <span class="material-symbols-outlined zapato-icono">roller_skating</span>
+                    <p>Daily Jogging</p>
+                </div>
+                <div class="estadisticas-correr colocar-border-radius">
+                    <div class="correr-icono-texto">
+                        <span class="material-symbols-outlined zapato-icono">directions_run</span>
+                        <p>Daily Jogging</p>
+                    </div>
+                    <div class="correr-informacion">
+                        <div class="informacion-texto">
+                            <p class="informacion-texto-chiquito">Long Time</p>
+                            <p>748 hr</p>
+                            <p class="informacion-texto-chiquito">August</p>
+                        </div>
+                        <span class="material-symbols-outlined informacion-icono">chevron_right</span>
+                    </div>
+                </div>
+            </section>
+            <section class="principal-cards">
+                <div class="cards-general colocar-border-radius">
+                    <span class="material-symbols-outlined card-general-icono">pedal_bike</span>
+                    <span class="material-symbols-outlined menu">more_vert</span>
+                    <h3>Bicycle Drill</h3>
+                    <p class="card-general-subtitulo">35 hrs / months</p>
+                    <div class="card-general-progreso-texto">
+                        <p>Progess</p>
+                        <p>45%</p>
+                    </div>
+                    <div class="card-general-barra-progreso">
+                        <div class="barra-progreso-verde bicicleta"></div>
+                    </div>
+                    <div class="card-general-footer">
+                        <p class="general-footer-texto">18/35</p>
+                        <button class="general-footer-boton">3 days left</button>
+                    </div>
+                </div>
+                <div class="cards-general colocar-border-radius">
+                    <span class="material-symbols-outlined card-general-icono">sprint</span>
+                    <span class="material-symbols-outlined menu">more_vert</span>
+                    <h3>Jogging Hero</h3>
+                    <p class="card-general-subtitulo">17 hrs / months</p>
+                    <div class="card-general-progreso-texto">
+                        <p>Progess</p>
+                        <p>13%</p>
+                    </div>
+                    <div class="card-general-barra-progreso">
+                        <div class="barra-progreso-verde running"></div>
+                    </div>
+                    <div class="card-general-footer">
+                        <p class="general-footer-texto">8/13</p>
+                        <button class="general-footer-boton">17 days left</button>
+                    </div>
+                </div>
+                <div class="cards-general colocar-border-radius">
+                    <span class="material-symbols-outlined card-general-icono">footprint</span>
+                    <span class="material-symbols-outlined menu">more_vert</span>
+                    <h3>Healthly Busy</h3>
+                    <p class="card-general-subtitulo">38652 hrs / months</p>
+                    <div class="card-general-progreso-texto">
+                        <p>Progess</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="card-general-barra-progreso">
+                        <div class="barra-progreso-verde zapato"></div>
+                    </div>
+                    <div class="card-general-footer">
+                        <p class="general-footer-texto">34786/38652</p>
+                        <button class="general-footer-boton">3 days left</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <section class="contenedor-chat">
+        <div class="chat-friends">
+            <div class="friends-contenedor">
+                <span class="material-symbols-outlined friends-contenedor-icono">mail</span>
+                <p>Friends</p>
+            </div>
+            <p class="friends-ver-todos">View all</p>
+        </div>
+        <div class="chat-botones">
+            <div class="botones-contenedor colocar-border-radius">
+                <p class="activado">Activities</p>
+                <p>Other</p>
+            </div>
+        </div>
+        <div class="chat-personas">
+            <div class="personas-general">
+                <div class="persona-general-datos">
+                    <img src="./img/img1.jpg" alt="" class="datos-foto">
+                    <div class="datos-texto">
+                        <h3>Max Zucaritas</h3>
+                        <p class="datos-textos-chiquitos">Hola amigo</p>
+                        <p class="datos-textos-chiquitos">17 min left</p>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined friends-contenedor-icono">mail</span>
+            </div>
+            <div class="personas-general">
+                <div class="persona-general-datos">
+                    <img src="./img/img1.jpg" alt="" class="datos-foto">
+                    <div class="datos-texto">
+                        <h3>Max Zucaritas</h3>
+                        <p class="datos-textos-chiquitos">Hola amigo</p>
+                        <p class="datos-textos-chiquitos">17 min left</p>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined friends-contenedor-icono">mail</span>
+            </div>
+            <div class="personas-general">
+                <div class="persona-general-datos">
+                    <img src="./img/img1.jpg" alt="" class="datos-foto">
+                    <div class="datos-texto">
+                        <h3>Max Zucaritas</h3>
+                        <p class="datos-textos-chiquitos">Hola amigo</p>
+                        <p class="datos-textos-chiquitos">17 min left</p>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined friends-contenedor-icono">mail</span>
+            </div>
+            <div class="personas-general">
+                <div class="persona-general-datos">
+                    <img src="./img/img1.jpg" alt="" class="datos-foto">
+                    <div class="datos-texto">
+                        <h3>Max Zucaritas</h3>
+                        <p class="datos-textos-chiquitos">Hola amigo</p>
+                        <p class="datos-textos-chiquitos">17 min left</p>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined friends-contenedor-icono">mail</span>
+            </div>
+            <div class="personas-general">
+                <div class="persona-general-datos">
+                    <img src="./img/img1.jpg" alt="" class="datos-foto">
+                    <div class="datos-texto">
+                        <h3>Max Zucaritas</h3>
+                        <p class="datos-textos-chiquitos">Hola amigo</p>
+                        <p class="datos-textos-chiquitos">17 min left</p>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined friends-contenedor-icono">mail</span>
+            </div>
+        </div>
+        <div class="chat-mapa">
+            <div class="mapa-informacion">
+                <div class="mapa-informacion-texto">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <h3>Live map</h3>
+                </div>
+                <p class="datos-textos-chiquitos morado">View</p>
+            </div>
+            <div class="mapa-ubicacion">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1177.0208893119293!2d-73.11326120156353!3d7.124769202383686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e68154ce1a54d3b%3A0x33aa6eff09e4f480!2sCoex!5e0!3m2!1ses!2sco!4v1675635094424!5m2!1ses!2sco" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

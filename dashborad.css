@@ -1,0 +1,536 @@
+:root{
+    --letra1:'Ubuntu', sans-serif;
+    --letra2:'Outfit', sans-serif;
+    --letra3:'Unbounded', cursive;
+    --colorfondoinfo: #f1f1f3;
+    --colornav:#7062ba;
+    --colorPrincipal: #5546a1;
+    --colorPrincipalOscuro: #3b316e;
+    --colorLetraChiquita: #a8a9ac;
+    --colorFondoClarito: #f2f3f3;
+    --borderRadiusGeneral: 2rem;
+    --colorRosadito: #ea5e8c;
+    --colorRosaditoClarito: #fd93b577;
+    --fondoClarito: #ffffff4f;
+    --fondoEsatadisticas: #9185cb;
+}
+
+.colocar-border-radius{
+    border-radius: var(--borderRadiusGeneral);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--letra2);
+}
+
+body{
+    display: flex;
+}
+
+.contenedor-principal{
+    background-color: var(--colorfondoinfo);
+    padding: 15px ;
+    width:80%;
+    min-height: 300px;
+    display: flex;
+    min-height: 100vh;
+}
+
+.principal-nav{
+    background-color: var(--colornav);
+    min-width:110px ;
+    min-height: 80vh;
+    padding: 25px;
+    border-radius: 40px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.nav-iconos-arriba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.nav-iconos-abajo{
+    display: flex;
+    color: white;  
+}
+
+.nav-iconos-arriba span{
+    font-size: 1.7rem;
+}
+
+.campanita{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.input-iconos{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.input-iconos:checked + .iconos-arriba-material {
+    padding: 10px;
+    background-color: var(--colorPrincipalOscuro);
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.iconos-arriba-material{
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+.linea-abajo{
+    border-top: 1px solid white;
+    padding: 15px;
+}
+
+.linea-arriba{
+    border-bottom: 1px solid white;
+    padding: 15px;
+}
+
+.principal-informacion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.informacion-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.informacion-search{
+    position: relative;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    max-height: 40px;
+}
+
+.informacion-buscar{
+    border-radius: 10px;
+    border: none;
+    padding-left: 30px;
+    font-size: 15px;
+    height: 100%;
+    font-weight: 600;
+}
+
+.search{
+    position:absolute;
+    left: 4px;
+    top: 8px;
+    color: var(--colorPrincipal);
+    font-weight: bold;
+}
+
+.imagen{
+    height: 100%;
+    width: auto;
+    border-radius: 50%;   
+}
+
+
+.titulo-dashboard{
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-texto-chiquito{
+    font-size: 14px;
+    color: var(--colorLetraChiquita);
+}
+
+.informacion-estadisticas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "principal principal zapato"
+        "principal principal correr"
+        "principal principal correr"
+    ;
+    min-height: 200px;
+    gap: 20px;
+    grid-auto-rows: auto;
+}
+
+.estadisticas-principal{
+    background-color: var(--colorPrincipal);
+    grid-area: principal;
+}
+
+.estadisticas-principal-overview{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 2.5rem;
+    color: white;
+}
+
+.estadisticas-principal-numeros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    background: linear-gradient(var(--fondoEsatadisticas) 40%, transparent 80%);
+    padding: 1rem 0;
+    margin-inline: 1rem;
+}
+
+.izquierda{
+    border-top-left-radius: 0;
+}
+
+.derecha{
+    border-top-right-radius: 0;
+}
+
+.principal-numeros-informacion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--colorPrincipal);
+    min-height: 120px;
+}
+
+.principal-overview-boton{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0.9rem;
+    width: 130px;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+}
+
+.centro{
+    background-color: var(--fondoEsatadisticas);
+}
+.estadisticas-zapato{
+    background-color: var(--colornav);
+    grid-area: zapato;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    gap: 15px;
+    color: white;
+}
+
+.zapato-icono{
+    border-radius: 1rem;
+    background-color: #ffffff4f;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-size: 1.7rem;
+    padding: 0 18px;
+    min-height: 60px;
+}
+
+.estadisticas-correr{
+    background-color: var(--colorRosadito);
+    grid-area: correr;
+}
+
+.correr-icono-texto{
+    border-radius: var(--borderRadiusGeneral);
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    background-color: var(--colorRosaditoClarito);
+    color: white;
+}
+
+.correr-informacion{
+    display: flex;
+    align-items: flex-end;
+    padding: 21px;
+    justify-content: space-between;
+}
+
+.informacion-texto{
+    color: white;
+    font-size: 2rem;
+}
+
+.informacion-texto-chiquito{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.informacion-icono{
+    color: white;
+    border: 1px solid;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.principal-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.cards-general{
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-general-icono{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: white;
+    border-radius: 1.2rem;
+    background-color: var(--colornav);
+    left: calc(50% - 25px);
+    top: -25px;
+}
+
+.menu{
+    align-self: flex-end;
+    color: var(--colorLetraChiquita);
+}
+
+.card-general-subtitulo{
+    font-size: 0.8rem;
+    color: var(--colorLetraChiquita);
+}
+
+.card-general-progreso-texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card-general-barra-progreso{
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: var(--colorLetraChiquita);
+}
+
+.barra-progreso-verde{
+    background-color: green;
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    box-shadow: -1px 0px 8px 1px rgba(17, 233, 17, 0.753);
+}
+
+.bicicleta{
+    width: 45%;
+}
+
+.running{
+    width: 13%;
+}
+
+.zapato{
+    width: 90%;
+}
+
+.card-general-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    width: 100%;
+}
+
+.general-footer-texto{
+    color: var(--colorLetraChiquita);
+}
+
+.general-footer-boton{
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    background-color: var(--colorRosaditoClarito);
+    color: var(--colorRosadito);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.general-footer-boton:hover{
+    color: white;
+    background-color: var(--colorRosadito);
+}
+
+.contenedor-chat{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 20%;
+    padding: 23px;
+    padding-top: 35px;
+}
+
+.chat-friends{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 42px;
+}
+
+.friends-contenedor{
+    display: flex;
+    color: var(--colorPrincipal);
+    font-weight: bold;
+    align-items: center;
+    gap: 8px;
+}
+
+.friends-contenedor-icono{
+    font-size: 1.2rem;
+}
+
+.friends-ver-todos{
+    color: var(--colornav);
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.botones-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a8a9ac62;
+    padding: 10px;
+}
+
+.botones-contenedor p{
+    padding: 0.4rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.activado{
+    background-color: var(--colornav);
+    color: white;
+}
+
+.chat-personas{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.personas-general{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.persona-general-datos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6px;
+}
+
+.datos-foto{
+    width: 43px;
+    border-radius: 50%;
+}
+
+.datos-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.datos-texto h3{
+    font-size: 1rem;
+}
+
+.datos-textos-chiquitos{
+    font-size: 0.8rem;
+    color: var(--colorLetraChiquita);
+}
+
+.chat-mapa{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 2rem;
+    border-top: 1px solid;
+    color: var(--colorLetraChiquita);
+}
+
+.mapa-informacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--colorPrincipal);
+}
+
+.morado{
+    color: var(--colorPrincipal);
+}
+
+.mapa-informacion-texto{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
